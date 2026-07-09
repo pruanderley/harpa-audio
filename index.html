@@ -837,7 +837,8 @@ async function startAudio() {
     url = await audioUrlFor(h.numero);
   } catch (e) {
     console.warn('Falha ao carregar índice do repositório:', e);
-    _setProgress('❌ Não consegui listar os áudios no GitHub. Confira sua internet.');
+    var detalhe = (e && e.message) ? e.message : String(e);
+    _setProgress('❌ Erro ao listar áudios: ' + detalhe);
     _setAudioPlayingUI(false, null);
     isAudioLoading = false;
     return;
