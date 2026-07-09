@@ -1,0 +1,10 @@
+{
+  "appId": "com.harpa.offline",
+  "appName": "Harpa Cristã Offline",
+  "webDir": "www",
+  "android": {
+    "allowMixedContent": false,
+    "minWebViewVersion": 60,
+    "backgroundColor": "#14101d"
+  }
+}
